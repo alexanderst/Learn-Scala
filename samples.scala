@@ -54,6 +54,8 @@ def reverse2(xs:List[Int]) : List[Int] = {
 	while (!currList.isEmpty) {
 		ret = currList.head :: ret
 		currList = currList.tail
+	}
+}
 
 def isPalindrome(xs:List[Int]): Boolean = {
 	var fromLeft = xs.foldLeft(List[Int]())((a,b) => b :: a)
